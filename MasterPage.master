@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Made with WOW Slider - Create beautiful, responsive image sliders in a few clicks. Awesome skins and animations. Image carousel" />
+	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 100px;
+        }
+        .auto-style3 {
+            width: 1054px;
+        }
+        .auto-style4 {
+            width: 841px;
+            height: 196px;
+        }
+        .auto-style5 {
+            width: 206px;
+            height: 196px;
+        }
+    </style>
+</head>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style3">
+                <table class="auto-style1" style="border-bottom-style: solid; border-bottom-width: thick; border-bottom-color: #FF0000">
+                    <tr>
+                        <td>
+                            <img alt="" class="auto-style5" src="images/Logo.jpg" /></td>
+                        <td>
+                            <img alt="" class="auto-style4" src="images/headfinal.jpg" /></td>
+                    </tr>
+                </table>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style3">
+                <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px" style="font-size: large">
+                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem Text="Login" Value="Login">
+                            <asp:MenuItem NavigateUrl="~/adminlogin.aspx" Text="Admin Login" Value="Admin Login"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Agency Login" Value="Agency Login"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/AgencyRegistration.aspx" Text="Agency Registration" Value="New Item"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Regis.aspx" Text="Orphan Registration" Value="New Item"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/AdoptionRequest.aspx" Text="Adoption Request" Value="New Item"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Donation.aspx" Text="Donation" Value="Donation"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Workshop.aspx" Text="Workshop" Value="Workshop"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/AboutUs.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ContactUs.aspx" Text="Contact Us" Value="New Item"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                </asp:Menu>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style3">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style3" style="border-top: thick solid #FF0000; text-align: center;"><strong>Design and Developed By: Sonu Yagya Saini</strong></td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
